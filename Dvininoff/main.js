@@ -24,3 +24,10 @@ btn1Text.addEventListener('animationend', () => {
     btn1Text.classList.remove('popup-message');
     btn1Text.classList.add('hidden');
 });
+let menu = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick =()=>{
+    menu.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+}
